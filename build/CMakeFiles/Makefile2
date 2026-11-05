@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = /home/lancelot/Desktop/PROJECT/Sutbnet/build
 # The main recursive "all" target.
 all: CMakeFiles/stubnet.dir/all
 all: CMakeFiles/stubnet_demo.dir/all
-all: CMakeFiles/stubnet_core_test.dir/all
+all: CMakeFiles/stubnet_tests.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -75,7 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/stubnet.dir/clean
 clean: CMakeFiles/stubnet_demo.dir/clean
-clean: CMakeFiles/stubnet_core_test.dir/clean
+clean: CMakeFiles/stubnet_tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -111,7 +111,7 @@ CMakeFiles/stubnet.dir/clean:
 CMakeFiles/stubnet_demo.dir/all: CMakeFiles/stubnet.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_demo.dir/build.make CMakeFiles/stubnet_demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_demo.dir/build.make CMakeFiles/stubnet_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles --progress-num=10,11 "Built target stubnet_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles --progress-num=8,9 "Built target stubnet_demo"
 .PHONY : CMakeFiles/stubnet_demo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -131,30 +131,30 @@ CMakeFiles/stubnet_demo.dir/clean:
 .PHONY : CMakeFiles/stubnet_demo.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/stubnet_core_test.dir
+# Target rules for target CMakeFiles/stubnet_tests.dir
 
 # All Build rule for target.
-CMakeFiles/stubnet_core_test.dir/all: CMakeFiles/stubnet.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_core_test.dir/build.make CMakeFiles/stubnet_core_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_core_test.dir/build.make CMakeFiles/stubnet_core_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles --progress-num=8,9 "Built target stubnet_core_test"
-.PHONY : CMakeFiles/stubnet_core_test.dir/all
+CMakeFiles/stubnet_tests.dir/all: CMakeFiles/stubnet.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17 "Built target stubnet_tests"
+.PHONY : CMakeFiles/stubnet_tests.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/stubnet_core_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stubnet_core_test.dir/all
+CMakeFiles/stubnet_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stubnet_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles 0
-.PHONY : CMakeFiles/stubnet_core_test.dir/rule
+.PHONY : CMakeFiles/stubnet_tests.dir/rule
 
 # Convenience name for target.
-stubnet_core_test: CMakeFiles/stubnet_core_test.dir/rule
-.PHONY : stubnet_core_test
+stubnet_tests: CMakeFiles/stubnet_tests.dir/rule
+.PHONY : stubnet_tests
 
 # clean rule for target.
-CMakeFiles/stubnet_core_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_core_test.dir/build.make CMakeFiles/stubnet_core_test.dir/clean
-.PHONY : CMakeFiles/stubnet_core_test.dir/clean
+CMakeFiles/stubnet_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/clean
+.PHONY : CMakeFiles/stubnet_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
@@ -163,6 +163,7 @@ CMakeFiles/stubnet_core_test.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

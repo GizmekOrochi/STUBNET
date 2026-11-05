@@ -10,6 +10,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/lancelot/Desktop/PROJECT/Sutbnet/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
@@ -51,5 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/stubnet.dir/DependInfo.cmake"
   "CMakeFiles/stubnet_demo.dir/DependInfo.cmake"
-  "CMakeFiles/stubnet_core_test.dir/DependInfo.cmake"
+  "CMakeFiles/stubnet_tests.dir/DependInfo.cmake"
   )

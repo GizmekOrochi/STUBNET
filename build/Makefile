@@ -123,6 +123,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -153,17 +154,17 @@ stubnet_demo/fast:
 .PHONY : stubnet_demo/fast
 
 #=============================================================================
-# Target rules for targets named stubnet_core_test
+# Target rules for targets named stubnet_tests
 
 # Build rule for target.
-stubnet_core_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stubnet_core_test
-.PHONY : stubnet_core_test
+stubnet_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stubnet_tests
+.PHONY : stubnet_tests
 
 # fast build rule for target.
-stubnet_core_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_core_test.dir/build.make CMakeFiles/stubnet_core_test.dir/build
-.PHONY : stubnet_core_test/fast
+stubnet_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/build
+.PHONY : stubnet_tests/fast
 
 src/core/sub/communication/security.o: src/core/sub/communication/security.cpp.o
 .PHONY : src/core/sub/communication/security.o
@@ -333,29 +334,173 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_demo.dir/build.make CMakeFiles/stubnet_demo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-tests/test_core.o: tests/test_core.cpp.o
-.PHONY : tests/test_core.o
+tests/discovery_tests.o: tests/discovery_tests.cpp.o
+.PHONY : tests/discovery_tests.o
 
 # target to build an object file
-tests/test_core.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_core_test.dir/build.make CMakeFiles/stubnet_core_test.dir/tests/test_core.cpp.o
-.PHONY : tests/test_core.cpp.o
+tests/discovery_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/discovery_tests.cpp.o
+.PHONY : tests/discovery_tests.cpp.o
 
-tests/test_core.i: tests/test_core.cpp.i
-.PHONY : tests/test_core.i
+tests/discovery_tests.i: tests/discovery_tests.cpp.i
+.PHONY : tests/discovery_tests.i
 
 # target to preprocess a source file
-tests/test_core.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_core_test.dir/build.make CMakeFiles/stubnet_core_test.dir/tests/test_core.cpp.i
-.PHONY : tests/test_core.cpp.i
+tests/discovery_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/discovery_tests.cpp.i
+.PHONY : tests/discovery_tests.cpp.i
 
-tests/test_core.s: tests/test_core.cpp.s
-.PHONY : tests/test_core.s
+tests/discovery_tests.s: tests/discovery_tests.cpp.s
+.PHONY : tests/discovery_tests.s
 
 # target to generate assembly for a file
-tests/test_core.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_core_test.dir/build.make CMakeFiles/stubnet_core_test.dir/tests/test_core.cpp.s
-.PHONY : tests/test_core.cpp.s
+tests/discovery_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/discovery_tests.cpp.s
+.PHONY : tests/discovery_tests.cpp.s
+
+tests/eventbus_tests.o: tests/eventbus_tests.cpp.o
+.PHONY : tests/eventbus_tests.o
+
+# target to build an object file
+tests/eventbus_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/eventbus_tests.cpp.o
+.PHONY : tests/eventbus_tests.cpp.o
+
+tests/eventbus_tests.i: tests/eventbus_tests.cpp.i
+.PHONY : tests/eventbus_tests.i
+
+# target to preprocess a source file
+tests/eventbus_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/eventbus_tests.cpp.i
+.PHONY : tests/eventbus_tests.cpp.i
+
+tests/eventbus_tests.s: tests/eventbus_tests.cpp.s
+.PHONY : tests/eventbus_tests.s
+
+# target to generate assembly for a file
+tests/eventbus_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/eventbus_tests.cpp.s
+.PHONY : tests/eventbus_tests.cpp.s
+
+tests/hardening_tests.o: tests/hardening_tests.cpp.o
+.PHONY : tests/hardening_tests.o
+
+# target to build an object file
+tests/hardening_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/hardening_tests.cpp.o
+.PHONY : tests/hardening_tests.cpp.o
+
+tests/hardening_tests.i: tests/hardening_tests.cpp.i
+.PHONY : tests/hardening_tests.i
+
+# target to preprocess a source file
+tests/hardening_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/hardening_tests.cpp.i
+.PHONY : tests/hardening_tests.cpp.i
+
+tests/hardening_tests.s: tests/hardening_tests.cpp.s
+.PHONY : tests/hardening_tests.s
+
+# target to generate assembly for a file
+tests/hardening_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/hardening_tests.cpp.s
+.PHONY : tests/hardening_tests.cpp.s
+
+tests/main.o: tests/main.cpp.o
+.PHONY : tests/main.o
+
+# target to build an object file
+tests/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/main.cpp.o
+.PHONY : tests/main.cpp.o
+
+tests/main.i: tests/main.cpp.i
+.PHONY : tests/main.i
+
+# target to preprocess a source file
+tests/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/main.cpp.i
+.PHONY : tests/main.cpp.i
+
+tests/main.s: tests/main.cpp.s
+.PHONY : tests/main.s
+
+# target to generate assembly for a file
+tests/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/main.cpp.s
+.PHONY : tests/main.cpp.s
+
+tests/peer_manager_tests.o: tests/peer_manager_tests.cpp.o
+.PHONY : tests/peer_manager_tests.o
+
+# target to build an object file
+tests/peer_manager_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/peer_manager_tests.cpp.o
+.PHONY : tests/peer_manager_tests.cpp.o
+
+tests/peer_manager_tests.i: tests/peer_manager_tests.cpp.i
+.PHONY : tests/peer_manager_tests.i
+
+# target to preprocess a source file
+tests/peer_manager_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/peer_manager_tests.cpp.i
+.PHONY : tests/peer_manager_tests.cpp.i
+
+tests/peer_manager_tests.s: tests/peer_manager_tests.cpp.s
+.PHONY : tests/peer_manager_tests.s
+
+# target to generate assembly for a file
+tests/peer_manager_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/peer_manager_tests.cpp.s
+.PHONY : tests/peer_manager_tests.cpp.s
+
+tests/security_tests.o: tests/security_tests.cpp.o
+.PHONY : tests/security_tests.o
+
+# target to build an object file
+tests/security_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/security_tests.cpp.o
+.PHONY : tests/security_tests.cpp.o
+
+tests/security_tests.i: tests/security_tests.cpp.i
+.PHONY : tests/security_tests.i
+
+# target to preprocess a source file
+tests/security_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/security_tests.cpp.i
+.PHONY : tests/security_tests.cpp.i
+
+tests/security_tests.s: tests/security_tests.cpp.s
+.PHONY : tests/security_tests.s
+
+# target to generate assembly for a file
+tests/security_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/security_tests.cpp.s
+.PHONY : tests/security_tests.cpp.s
+
+tests/tester_framework_tests.o: tests/tester_framework_tests.cpp.o
+.PHONY : tests/tester_framework_tests.o
+
+# target to build an object file
+tests/tester_framework_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/tester_framework_tests.cpp.o
+.PHONY : tests/tester_framework_tests.cpp.o
+
+tests/tester_framework_tests.i: tests/tester_framework_tests.cpp.i
+.PHONY : tests/tester_framework_tests.i
+
+# target to preprocess a source file
+tests/tester_framework_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/tester_framework_tests.cpp.i
+.PHONY : tests/tester_framework_tests.cpp.i
+
+tests/tester_framework_tests.s: tests/tester_framework_tests.cpp.s
+.PHONY : tests/tester_framework_tests.s
+
+# target to generate assembly for a file
+tests/tester_framework_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stubnet_tests.dir/build.make CMakeFiles/stubnet_tests.dir/tests/tester_framework_tests.cpp.s
+.PHONY : tests/tester_framework_tests.cpp.s
 
 # Help Target
 help:
@@ -367,8 +512,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... stubnet"
-	@echo "... stubnet_core_test"
 	@echo "... stubnet_demo"
+	@echo "... stubnet_tests"
 	@echo "... src/core/sub/communication/security.o"
 	@echo "... src/core/sub/communication/security.i"
 	@echo "... src/core/sub/communication/security.s"
@@ -390,9 +535,27 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... tests/test_core.o"
-	@echo "... tests/test_core.i"
-	@echo "... tests/test_core.s"
+	@echo "... tests/discovery_tests.o"
+	@echo "... tests/discovery_tests.i"
+	@echo "... tests/discovery_tests.s"
+	@echo "... tests/eventbus_tests.o"
+	@echo "... tests/eventbus_tests.i"
+	@echo "... tests/eventbus_tests.s"
+	@echo "... tests/hardening_tests.o"
+	@echo "... tests/hardening_tests.i"
+	@echo "... tests/hardening_tests.s"
+	@echo "... tests/main.o"
+	@echo "... tests/main.i"
+	@echo "... tests/main.s"
+	@echo "... tests/peer_manager_tests.o"
+	@echo "... tests/peer_manager_tests.i"
+	@echo "... tests/peer_manager_tests.s"
+	@echo "... tests/security_tests.o"
+	@echo "... tests/security_tests.i"
+	@echo "... tests/security_tests.s"
+	@echo "... tests/tester_framework_tests.o"
+	@echo "... tests/tester_framework_tests.i"
+	@echo "... tests/tester_framework_tests.s"
 .PHONY : help
 
 
@@ -404,6 +567,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
