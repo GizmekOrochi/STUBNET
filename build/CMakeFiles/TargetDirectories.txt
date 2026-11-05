@@ -1,0 +1,6 @@
+/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/stubnet.dir
+/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/stubnet_demo.dir
+/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/stubnet_core_test.dir
+/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/test.dir
+/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/edit_cache.dir
+/home/lancelot/Desktop/PROJECT/Sutbnet/build/CMakeFiles/rebuild_cache.dir

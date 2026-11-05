@@ -1,0 +1,19 @@
+Start testing: Nov 05 11:23 CET
+----------------------------------------------------------
+1/1 Testing: stubnet_core
+1/1 Test: stubnet_core
+Command: "/home/lancelot/Desktop/PROJECT/Sutbnet/build/stubnet_core_test"
+Directory: /home/lancelot/Desktop/PROJECT/Sutbnet/build
+"stubnet_core" start time: Nov 05 11:23 CET
+Output:
+----------------------------------------------------------
+Core tests passed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"stubnet_core" end time: Nov 05 11:23 CET
+"stubnet_core" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 05 11:23 CET

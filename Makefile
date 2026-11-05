@@ -1,13 +1,25 @@
-CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17
-SRC = $(shell find src -name '*.cpp')
-BIN = bin/Sutbnet
+.PHONY: all run run-alpha run-beta test test-lan clean
 
 all:
-	$(CXX) $(CXXFLAGS) $(SRC) -o $(BIN)
+	cmake -S . -B build
+	cmake --build build -j2
 
-run: all
-	./$(BIN)
+test: all
+	ctest --test-dir build --output-on-failure
+
+test-lan: all
+	bash scripts/dev-certs.sh
+	python3 tests/test_lan.py
+
+run: run-alpha
+
+run-alpha: all
+	bash scripts/dev-certs.sh
+	./build/stubnet_demo alpha 42000 certs/alpha.pem certs/alpha.key certs/ca.pem
+
+run-beta: all
+	bash scripts/dev-certs.sh
+	./build/stubnet_demo beta 42002 certs/beta.pem certs/beta.key certs/ca.pem
 
 clean:
-	rm -f $(BIN)
+	rm -rf build

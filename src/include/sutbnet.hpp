@@ -1,8 +1,3 @@
-#ifndef SUTBNET_HPP
-#define SUTBNET_HPP
-
-#include <string>
-
-//Gros encapsulation de mes enormes couiiles
-
-#endif // SUTBNET_HPP
+#pragma once
+// Backward-compatible spelling for the original project archive.
+#include "stubnet/stubnet.hpp"

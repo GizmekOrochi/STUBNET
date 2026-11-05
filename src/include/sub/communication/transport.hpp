@@ -1,12 +1,17 @@
-#ifndef TRANSPORT_HPP
-#define TRANSPORT_HPP
+#pragma once
 
+#include <boost/asio.hpp>
+#include <boost/asio/ssl.hpp>
 #include <string>
 
-class transport {
+namespace Stubnet {
+
+class Transport {
 public:
-    transport();
-    ~transport();
+    using Socket = boost::asio::ssl::stream<boost::asio::ip::tcp::socket>;
+    
+    static bool send(Socket& socket, const std::string& payload);
+    static bool receive(Socket& socket, std::string& payload);
 };
 
-#endif // TRANSPORT_HPP
+}

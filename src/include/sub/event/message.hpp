@@ -1,12 +1,15 @@
-#ifndef MESSAGE_HPP
-#define MESSAGE_HPP
+#pragma once
 
 #include <string>
 
-class message {
-public:
-    message();
-    ~message();
+#include "../peer/peer.hpp"
+
+namespace Stubnet {
+
+struct message {
+    std::string header;
+    std::string body;
+    peer sender; // populated on receive from authenticated connection
 };
 
-#endif // MESSAGE_HPP
+}

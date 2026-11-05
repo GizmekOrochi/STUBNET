@@ -1,9 +1,16 @@
 #include "../../../include/sub/event/eventbus.hpp"
-
-eventbus::eventbus() {
-    // Constructor
+namespace Stubnet {
+void EventBus::subscribe(const std::string& header, Callback callback) {
+    std::lock_guard lock(mutex_);
+    callbacks_[header] = std::move(callback);
 }
-
-eventbus::~eventbus() {
-    // Destructor
+void EventBus::dispatch(const message& msg) const {
+    Callback callback;
+    {
+        std::lock_guard lock(mutex_);
+        auto it = callbacks_.find(msg.header);
+        if (it != callbacks_.end()) callback = it->second;
+    }
+    if (callback) callback(msg); // never invoke user code under lock
+}
 }

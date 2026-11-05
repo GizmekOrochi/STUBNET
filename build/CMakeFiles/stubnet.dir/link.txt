@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstubnet.a CMakeFiles/stubnet.dir/src/core/sub/network.cpp.o CMakeFiles/stubnet.dir/src/core/sub/discovery.cpp.o CMakeFiles/stubnet.dir/src/core/sub/peer/peer_manager.cpp.o CMakeFiles/stubnet.dir/src/core/sub/event/eventbus.cpp.o CMakeFiles/stubnet.dir/src/core/sub/communication/security.cpp.o CMakeFiles/stubnet.dir/src/core/sub/communication/transport.cpp.o
+/usr/bin/ranlib libstubnet.a

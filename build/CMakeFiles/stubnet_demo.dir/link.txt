@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/stubnet_demo.dir/src/main.cpp.o -o stubnet_demo  libstubnet.a /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 

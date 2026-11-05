@@ -1,12 +1,23 @@
-#ifndef SECURITY_HPP
-#define SECURITY_HPP
+#pragma once
 
+#include <boost/asio/ssl.hpp>
 #include <string>
 
-class security {
+#include "../config.hpp"
+
+namespace Stubnet {
+
+class Security {
 public:
-    security();
-    ~security();
+    explicit Security(const config& conf);
+    boost::asio::ssl::context& context() { return ctx_; }
+
+    const std::string& identity() const { return identity_; }
+    static std::string fingerprint(X509* certificate);
+
+private:
+    boost::asio::ssl::context ctx_{boost::asio::ssl::context::tls};
+    std::string identity_;
 };
 
-#endif // SECURITY_HPP
+}
